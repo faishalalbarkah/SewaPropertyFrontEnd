@@ -52,6 +52,7 @@
       justify-content: flex-end;
       margin-right: 60px;
       .header-signin {
+        // flex: 1;
         margin-top: 20px;
         width: 80px;
         height: 40px;
@@ -66,9 +67,10 @@
         }
       }
       .header-signup {
+        // flex: 1;
         margin-top: 20px;
         margin-left: 10px;
-        width: 80px;
+        width: 80px !important;
         height: 40px;
         background-color: $color-button-pasif;
         border-radius: 5px;
@@ -106,8 +108,8 @@
         .body-left-DayMonthYear {
           display: flex;
           flex-direction: row;
-          margin-left: 15px;
-          margin-right: 15px;
+          margin-left: 50px;
+          margin-right: 50px;
           .body-left-Day {
             flex: 1;
             width: 50px;
@@ -159,6 +161,153 @@
           font-weight: bold;
           color: #000000;
           margin-left: 50px;
+        }
+        .body-left-Data {
+          background-color: $color-button-pasif;
+          margin-left: 50px;
+          margin-right: 50px;
+          border: 3px solid rgba(196, 196, 196, 0.25);
+          box-sizing: border-box;
+          height: 50px;
+          border-radius: 10px;
+        }
+        #body-left-PropertyRoom {
+          flex: 1;
+          font-size: 20px;
+          font-weight: bold;
+          color: #000000;
+          margin-left: 50px;
+        }
+        #body-left-Bedroom {
+          margin-top: -10px;
+          flex: 1;
+          font-size: 15px;
+          font-weight: bold;
+          color: #929292;
+          margin-left: 50px;
+        }
+        .body-left-Bedroom-Wrapping {
+          display: flex;
+          flex-direction: row;
+          margin-left: 40px;
+          margin-right: 50px;
+          .body-left-Bedroom-Number {
+            flex: 1;
+            height: 50px;
+            background-color: $color-button-pasif;
+            border-radius: 5px;
+            margin-left: 10px;
+            .body-left-Number {
+              font-size: 20px;
+              font-weight: bold;
+              margin-top: 8px;
+              text-align: center;
+            }
+          }
+        }
+        #body-left-Bathroom {
+          flex: 1;
+          font-size: 15px;
+          font-weight: bold;
+          color: #929292;
+          margin-left: 50px;
+        }
+        .body-left-Bathroom-Wrapping {
+          display: flex;
+          flex-direction: row;
+          margin-left: 40px;
+          margin-right: 50px;
+          .body-left-Bathroom-Number {
+            flex: 1;
+            height: 50px;
+            background-color: $color-button-pasif;
+            border-radius: 5px;
+            margin-left: 10px;
+            .body-left-Number {
+              font-size: 20px;
+              font-weight: bold;
+              margin-top: 8px;
+              text-align: center;
+            }
+          }
+        }
+        #body-left-Aminities {
+          flex: 1;
+          font-size: 20px;
+          font-weight: bold;
+          color: #000000;
+          margin-left: 50px;
+        }
+        .body-left-furnished {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-left: 50px;
+          margin-right: 50px;
+          #body-left-furnished-text {
+            font-size: 20px;
+            color: #929292;
+            margin-top: -6px;
+          }
+        }
+        .body-left-PetAllowed {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-left: 50px;
+          margin-right: 50px;
+          #body-left-PetAllowed-text {
+            font-size: 20px;
+            color: #929292;
+            margin-top: -6px;
+          }
+        }
+        .body-left-sharedaccomodation {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-left: 50px;
+          margin-right: 50px;
+          #body-left-sharedaccomodation-text {
+            font-size: 20px;
+            color: #929292;
+            margin-top: -6px;
+          }
+        }
+        #body-left-Budget {
+          flex: 1;
+          font-size: 20px;
+          font-weight: bold;
+          color: #000000;
+          margin-left: 50px;
+        }
+        .TotalBudget {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-left: 50px;
+          margin-right: 50px;
+          #LessThan {
+            font-size: 20px;
+            font-weight: bold;
+            flex: 1;
+          }
+          #InputTotalBudget {
+            background-color: $color-button-pasif;
+            height: 50px;
+            border-width: 0px;
+            border-radius: 5px;
+            flex: 1;
+          }
+        }
+        .body-left-button {
+          width: 120px;
+          height: 50px;
+          margin-top: 20px;
+          margin-left: 50px;
+          border-radius: 10px;
+          border-width: 0px;
+          background-color: $color-button-active;
         }
       }
     }

@@ -50,6 +50,65 @@ class home extends Component {
                 </div>
               </div>
               <p id="body-left-Date">Date</p>
+              <input className="body-left-Data" type="date" />
+              <p id="body-left-PropertyRoom">Property Room</p>
+              <p id="body-left-Bedroom">Bedroom</p>
+              <div className="body-left-Bedroom-Wrapping">
+                <div className="body-left-Bedroom-Number">
+                  <p className="body-left-Number">1</p>
+                </div>
+                <div class="body-left-Bedroom-Number">
+                  <p className="body-left-Number">2</p>
+                </div>
+                <div class="body-left-Bedroom-Number">
+                  <p className="body-left-Number">3</p>
+                </div>
+                <div class="body-left-Bedroom-Number">
+                  <p className="body-left-Number">4</p>
+                </div>
+                <div class="body-left-Bedroom-Number">
+                  <p className="body-left-Number">5</p>
+                </div>
+              </div>
+              <p id="body-left-Bathroom">Bathroom</p>
+              <div className="body-left-Bathroom-Wrapping">
+                <div className="body-left-Bathroom-Number">
+                  <p className="body-left-Number">1</p>
+                </div>
+                <div class="body-left-Bathroom-Number">
+                  <p className="body-left-Number">2</p>
+                </div>
+                <div class="body-left-Bathroom-Number">
+                  <p className="body-left-Number">3</p>
+                </div>
+                <div class="body-left-Bathroom-Number">
+                  <p className="body-left-Number">4</p>
+                </div>
+                <div class="body-left-Bathroom-Number">
+                  <p className="body-left-Number">5</p>
+                </div>
+              </div>
+              <p id="body-left-Aminities">Amenities</p>
+              <div className="body-left-furnished">
+                <p id="body-left-furnished-text">Furnished</p>
+                <input type="checkbox" />
+              </div>
+              <div className="body-left-PetAllowed">
+                <p id="body-left-PetAllowed-text">Pet Allowed</p>
+                <input type="checkbox" />
+              </div>
+              <div className="body-left-sharedaccomodation">
+                <p id="body-left-sharedaccomodation-text">
+                  Shared Accomodation
+                </p>
+                <input type="checkbox" />
+              </div>
+              <p id="body-left-Budget">Budget</p>
+              <div className="TotalBudget">
+                <p id="LessThan">Less Than IDR.</p>
+                <input id="InputTotalBudget" type="number" />
+              </div>
+              <button className="body-left-button">Apply</button>
             </div>
           </div>
           <div className="body-right">
