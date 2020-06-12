@@ -1,0 +1,270 @@
+@import "./../config";
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  //   background-color: red;
+  //   star header
+  .header {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    background-color: $primary-color;
+    .header-left {
+      flex: 1;
+      .header-left-logo {
+        flex: 1;
+        height: 80px;
+        width: 130px;
+        margin-top: 10px;
+        margin-right: 50px;
+        margin-left: 50px;
+      }
+    }
+    .header-center {
+      flex: 1;
+      .header-pembungkus-search {
+        background-color: $color-button-pasif;
+        width: 320px;
+        margin-top: 20px;
+        position: relative;
+        border-radius: 5px;
+        margin-left: 20px;
+        .header-search {
+          height: 40px;
+          width: 270px;
+          border-radius: 5px;
+          border-width: 0;
+          background-color: $color-button-pasif;
+        }
+        .header-center-logo-search {
+          position: absolute;
+          margin-left: 10px;
+          padding-top: 8px;
+        }
+      }
+    }
+    .header-right {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-right: 60px;
+      .header-signin {
+        margin-top: 20px;
+        width: 80px;
+        height: 40px;
+        cursor: pointer;
+        .Text-sigin {
+          margin-top: 5px;
+          font-size: 18px;
+          font-weight: 800;
+          text-align: center;
+          color: #a7a7a7;
+          cursor: pointer;
+        }
+      }
+      .header-signup {
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 80px;
+        height: 40px;
+        background-color: $color-button-pasif;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .Text-signup {
+        margin-top: 5px;
+        font-size: 18px;
+        font-weight: 800;
+        text-align: center;
+        color: #000000;
+        cursor: pointer;
+      }
+    }
+  }
+  //   end header
+  //star body
+  .body {
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+    //Left
+    .body-left {
+      flex: 1;
+      .body-left-wrapping {
+        display: flex;
+        flex-direction: column;
+        #body-left-typeofrent {
+          flex: 1;
+          font-size: 20px;
+          font-weight: bold;
+          color: #000000;
+          margin-left: 50px;
+        }
+        .body-left-DayMonthYear {
+          display: flex;
+          flex-direction: row;
+          margin-left: 15px;
+          margin-right: 15px;
+          .body-left-Day {
+            flex: 1;
+            width: 50px;
+            height: 50px;
+            background-color: $color-button-pasif;
+            border-radius: 5px;
+            #Day {
+              font-size: 20px;
+              font-weight: bold;
+              color: #000000;
+              text-align: center;
+              margin-top: 8px;
+            }
+          }
+          .body-left-Month {
+            flex: 1;
+            width: 50px;
+            height: 50px;
+            background-color: $color-button-pasif;
+            border-radius: 5px;
+            margin-left: 10px;
+            #Month {
+              font-size: 20px;
+              font-weight: bold;
+              color: #000000;
+              text-align: center;
+              margin-top: 8px;
+            }
+          }
+          .body-left-Year {
+            flex: 1;
+            width: 50px;
+            height: 50px;
+            background-color: $color-button-active;
+            border-radius: 5px;
+            margin-left: 10px;
+            #Year {
+              font-size: 20px;
+              font-weight: bold;
+              color: #000000;
+              text-align: center;
+              margin-top: 8px;
+            }
+          }
+        }
+        #body-left-Date {
+          flex: 1;
+          font-size: 20px;
+          font-weight: bold;
+          color: #000000;
+          margin-left: 50px;
+        }
+      }
+    }
+    //Right
+    .body-right {
+      flex: 2;
+      background-color: $color-button-pasif;
+      .body-right-wrapping {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px;
+        .body-right-content {
+          width: 270px;
+          border-width: 10px;
+          margin: 10px;
+          border: 3px solid rgba(196, 196, 196, 0.25);
+          box-sizing: border-box;
+          border-radius: 5px;
+          min-height: 120px;
+          .body-right-image-content {
+            border-radius: 5px;
+            margin-top: 8px;
+            margin-left: 7.3px;
+            width: 250px;
+            height: 150px;
+            position: absolute;
+          }
+          .body-right-furnished {
+            height: 20px;
+            width: 80px;
+            background-color: white;
+            border-radius: 5px;
+            margin-left: 15px;
+            margin-top: 15px;
+            position: relative;
+            .body-right-furnished-text {
+              font-size: 10px;
+              font-weight: 800;
+              color: #000000;
+              padding-top: 2px;
+              padding-left: 15px;
+            }
+          }
+          .body-right-description {
+            margin-top: 115px;
+            margin-left: 10px;
+            position: relative;
+            .body-right-price-year {
+              display: flex;
+              flex-direction: row;
+              #body-right-price {
+                font-size: 15px;
+                font-weight: 700;
+                color: #000000;
+              }
+              #body-right-simbol {
+                font-size: 15px;
+                font-weight: 700;
+                color: #000000;
+              }
+              #body-right-year {
+                font-size: 15px;
+                font-weight: 700;
+                color: #000000;
+              }
+            }
+            .body-right-propertyroom {
+              display: flex;
+              flex-direction: row;
+              margin-top: -20px;
+              #body-right-beds {
+                font-size: 11px;
+                font-weight: 700;
+                color: #000000;
+              }
+              #body-right-bath {
+                font-size: 11px;
+                font-weight: 700;
+                color: #000000;
+              }
+              #body-right-sqft {
+                font-size: 11px;
+                font-weight: 700;
+                color: #000000;
+              }
+            }
+            .body-right-location {
+              display: flex;
+              flex-direction: row;
+              margin-top: -20px;
+              #body-right-kota {
+                font-size: 11px;
+                font-weight: 700;
+                color: #a8a8a8;
+              }
+              #body-right-kecamatan {
+                font-size: 11px;
+                font-weight: 700;
+                color: #a8a8a8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //end body
+}
