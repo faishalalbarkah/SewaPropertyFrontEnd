@@ -3,7 +3,7 @@
 .container-home {
   display: flex;
   flex-direction: column;
-  min-height: 500px;
+  min-height: auto;
   //   background-color: red;
   //   star header
   .header {
@@ -95,6 +95,7 @@
     //Left
     .body-left {
       flex: 1;
+      padding-bottom: 20px;
       .body-left-wrapping {
         display: flex;
         flex-direction: column;
@@ -110,28 +111,14 @@
           flex-direction: row;
           margin-left: 50px;
           margin-right: 50px;
-          .body-left-Day {
-            flex: 1;
-            width: 50px;
-            height: 50px;
-            background-color: $color-button-pasif;
-            border-radius: 5px;
-            #Day {
-              font-size: 20px;
-              font-weight: bold;
-              color: #000000;
-              text-align: center;
-              margin-top: 8px;
-            }
-          }
-          .body-left-Month {
+          .btn-type-of-rent {
             flex: 1;
             width: 50px;
             height: 50px;
             background-color: $color-button-pasif;
             border-radius: 5px;
             margin-left: 10px;
-            #Month {
+            .text-type-of-rent {
               font-size: 20px;
               font-weight: bold;
               color: #000000;
@@ -139,17 +126,33 @@
               margin-top: 8px;
             }
           }
-          .body-left-Year {
+          .btn-type-of-rent-active {
             flex: 1;
             width: 50px;
             height: 50px;
             background-color: $color-button-active;
             border-radius: 5px;
             margin-left: 10px;
-            #Year {
+            .text-type-of-rent-active {
               font-size: 20px;
               font-weight: bold;
               color: #000000;
+              text-align: center;
+              margin-top: 8px;
+            }
+          }
+          .btn-type-of-rent:hover {
+            flex: 1;
+            width: 50px;
+            height: 50px;
+            background-color: $primary-color;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            .text-type-of-rent:hover {
+              font-size: 20px;
+              font-weight: bold;
+              color: $color-button-active;
               text-align: center;
               margin-top: 8px;
             }
@@ -307,13 +310,31 @@
           margin-left: 50px;
           border-radius: 10px;
           border-width: 0px;
+          font-size: 15px;
+          font-weight: 800;
+          color: $primary-color;
           background-color: $color-button-active;
+          cursor: pointer;
+        }
+        .body-left-button:hover {
+          width: 120px;
+          height: 50px;
+          margin-top: 20px;
+          margin-left: 50px;
+          border-radius: 10px;
+          border-width: 0px;
+          font-size: 15px;
+          font-weight: 800;
+          color: $color-button-active;
+          background-color: $primary-color;
+          cursor: pointer;
         }
       }
     }
     //Right
     .body-right {
       flex: 2;
+      padding-bottom: 20px;
       background-color: $color-button-pasif;
       .body-right-wrapping {
         display: flex;
@@ -328,6 +349,7 @@
           box-sizing: border-box;
           border-radius: 5px;
           min-height: 120px;
+          cursor: pointer;
           .body-right-image-content {
             border-radius: 5px;
             margin-top: 8px;
@@ -336,10 +358,18 @@
             height: 150px;
             position: absolute;
           }
+          .body-right-image-content:hover {
+            border-radius: 5px;
+            margin-left: 0;
+            margin-top: 0;
+            width: 263px;
+            height: 150px;
+            position: absolute;
+          }
           .body-right-furnished {
             height: 20px;
             width: 80px;
-            background-color: white;
+            background-color: $primary-color;
             border-radius: 5px;
             margin-left: 15px;
             margin-top: 15px;
@@ -359,17 +389,17 @@
             .body-right-price-year {
               display: flex;
               flex-direction: row;
-              #body-right-price {
+              .body-right-price {
                 font-size: 15px;
                 font-weight: 700;
                 color: #000000;
               }
-              #body-right-simbol {
+              .body-right-simbol {
                 font-size: 15px;
                 font-weight: 700;
                 color: #000000;
               }
-              #body-right-year {
+              .body-right-year {
                 font-size: 15px;
                 font-weight: 700;
                 color: #000000;

@@ -26,12 +26,13 @@ class home extends Component {
             </div>
           </div>
           <div className="header-right">
-            <div className="header-signin">
+            {/* <div className="header-signin">
               <p className="Text-sigin">Sign in</p>
             </div>
             <div className="header-signup">
               <p className="Text-signup">Sign up</p>
-            </div>
+            </div> */}
+            <div></div>
           </div>
         </div>
         <div className="body">
@@ -39,14 +40,14 @@ class home extends Component {
             <div className="body-left-wrapping">
               <p id="body-left-typeofrent">Type of Rent</p>
               <div className="body-left-DayMonthYear">
-                <div className="body-left-Day">
-                  <p id="Day">Day</p>
+                <div className="btn-type-of-rent">
+                  <p className="text-type-of-rent">Day</p>
                 </div>
-                <div className="body-left-Month">
-                  <p id="Month">Month</p>
+                <div className="btn-type-of-rent">
+                  <p className="text-type-of-rent">Month</p>
                 </div>
-                <div className="body-left-Year">
-                  <p id="Year">Year</p>
+                <div className="btn-type-of-rent">
+                  <p className="text-type-of-rent">Year</p>
                 </div>
               </div>
               <p id="body-left-Date">Date</p>
@@ -123,11 +124,11 @@ class home extends Component {
                 </div>
                 <div className="body-right-description">
                   <div className="body-right-price-year">
-                    <p id="body-right-price">Rp. 9.000.000</p>
+                    <p className="body-right-price">Rp. 9.000.000</p>
                     &nbsp;
-                    <p id="body-right-simbol">/</p>
+                    <p className="body-right-simbol">/</p>
                     &nbsp;
-                    <p id="body-right-year">Year</p>
+                    <p className="body-right-year">Year</p>
                   </div>
                   <div className="body-right-propertyroom">
                     <p id="body-right-beds">3 Beds,</p>
@@ -143,7 +144,36 @@ class home extends Component {
                   </div>
                 </div>
               </div>
-              <div className="body-right-content"></div>
+              <div className="body-right-content">
+                <img
+                  className="body-right-image-content"
+                  src={require("./assets_user/property.jpg")}
+                />
+                <div className="body-right-furnished">
+                  <p className="body-right-furnished-text">Furnished</p>
+                </div>
+                <div className="body-right-description">
+                  <div className="body-right-price-year">
+                    <p className="body-right-price">Rp. 9.000.000</p>
+                    &nbsp;
+                    <p className="body-right-simbol">/</p>
+                    &nbsp;
+                    <p className="body-right-year">Year</p>
+                  </div>
+                  <div className="body-right-propertyroom">
+                    <p id="body-right-beds">3 Beds,</p>
+                    &nbsp;
+                    <p id="body-right-bath">2 Baths,</p>
+                    &nbsp;
+                    <p id="body-right-sqft">1,800 sqft</p>
+                  </div>
+                  <div className="body-right-location">
+                    <p id="body-right-kota">Tangerang Selatan</p>
+                    &nbsp;
+                    <p id="body-right-kecamatan"> Pondok Aren</p>
+                  </div>
+                </div>
+              </div>
               <div className="body-right-content"></div>
               <div className="body-right-content"></div>
             </div>
