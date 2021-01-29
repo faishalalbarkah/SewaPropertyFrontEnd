@@ -17,21 +17,23 @@ class home extends Component {
               <input
                 className="header-search"
                 type="text"
-                placeholder="Daerah"
+                placeholder="Daerah...."
               />
-              <img
-                className="header-center-logo-search"
-                src={require("./assets_user/Vector.png")}
-              />
+              <div className="wrapper-header-search-logo">
+                <img
+                  className="header-center-logo-search"
+                  src={require("./assets_user/Vector.png")}
+                />
+              </div>
             </div>
           </div>
           <div className="header-right">
-            {/* <div className="header-signin">
+            <div className="header-signin">
               <p className="Text-sigin">Sign in</p>
             </div>
             <div className="header-signup">
               <p className="Text-signup">Sign up</p>
-            </div> */}
+            </div>
             <div></div>
           </div>
         </div>
