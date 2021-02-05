@@ -38,6 +38,9 @@
           border-width: 0;
           background-color: $color-button-pasif;
         }
+        .header-search:focus {
+          outline: none;
+        }
         .header-center-logo-search {
           position: absolute;
           margin-left: 10px;
@@ -334,6 +337,9 @@
     //Right
     .body-right {
       flex: 2;
+      display: flex;
+      justify-content: center;
+      border: 1px solid salmon;
       padding-bottom: 20px;
       background-color: $color-button-pasif;
       .body-right-wrapping {
@@ -343,6 +349,7 @@
         margin: 10px;
         .body-right-content {
           width: 270px;
+          height: 300px;
           border-width: 10px;
           margin: 10px;
           border: 3px solid rgba(196, 196, 196, 0.25);
