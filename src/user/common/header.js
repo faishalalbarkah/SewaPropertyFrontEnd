@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Modal, Button, Row, Col, Container } from "react-bootstrap";
+import { Modal, Button, Row, Col, Container, Form } from "react-bootstrap";
 import "../style/home/home.scss";
+import { Link } from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {
@@ -74,16 +75,46 @@ class Header extends Component {
           {/* //Signin */}
         </Container>
         <Modal show={this.state.showlogin} onHide={this.CloseLogin}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={this.CloseLogin}>
-              Close
-            </Button>
-            <Button variant="primary">Save Changes</Button>
-          </Modal.Footer>
+          <div style={{ width: "100%", height: "70px" }}>
+            <p
+              style={{
+                textAlign: "center",
+                marginTop: "15px",
+                color: "#000000",
+                fontWeight: "700",
+                fontSize: "30px",
+              }}
+            >
+              Sign In
+            </p>
+          </div>
+          <Modal.Body>
+            <Form>
+              <Form.Group controlId="formBasicEmail">
+                <Form.Label>Username</Form.Label>
+                <Form.Control type="text" placeholder="Enter Username" />
+              </Form.Group>
+
+              <Form.Group controlId="formBasicPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" placeholder="Password" />
+              </Form.Group>
+              <Form.Group>
+                <Button
+                  style={{
+                    width: "100%",
+                    marginTop: "15px",
+                    backgroundColor: "#5A57AB",
+                  }}
+                >
+                  Save Changes
+                </Button>
+                <p style={{ textAlign: "center", marginTop: "5px" }}>
+                  Don't have an account? <Link>Klik here</Link>
+                </p>
+              </Form.Group>
+            </Form>
+          </Modal.Body>
         </Modal>
       </>
     );
