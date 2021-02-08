@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Modal, Button } from "react-bootstrap";
+import { Modal, Button, Row, Col, Container } from "react-bootstrap";
 import "../style/home/home.scss";
 
 class Header extends Component {
@@ -24,44 +24,55 @@ class Header extends Component {
   render() {
     return (
       <>
-        <div className="header">
-          <div className="header-left">
-            <img
-              className="header-left-logo"
-              src={require("../assets_user/Logo.PNG")}
-            />
-          </div>
-          <div className="header-center">
-            <div className="header-pembungkus-search">
-              <input
-                className="header-search"
-                type="text"
-                placeholder="Daerah...."
+        {/* <div className="Container"> */}
+        <Container>
+          <Row className="header">
+            {/* <div className="header "> */}
+            <Col className="header-left">
+              {/* <div className="header-left "> */}
+              <img
+                className="header-left-logo"
+                src={require("../assets_user/Logo.PNG")}
               />
-              <div className="wrapper-header-search-logo">
-                <img
-                  className="header-center-logo-search"
-                  src={require("../assets_user/Vector.png")}
+              {/* </div> */}
+            </Col>
+            <Col className="header-center">
+              {/* <div className="header-center "> */}
+              <div className="header-pembungkus-search">
+                <input
+                  className="header-search"
+                  type="text"
+                  placeholder="Daerah...."
                 />
+                <div className="wrapper-header-search-logo">
+                  <img
+                    className="header-center-logo-search"
+                    src={require("../assets_user/Vector.png")}
+                  />
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="header-right">
-            <div className="header-signin" onClick={this.ShowLogin}>
-              <p className="Text-sigin">Sign in</p>
-            </div>
-            <div className="header-signup">
-              <p className="Text-signup">Sign up</p>
-            </div>
-            {/* <div className="wrapper-img-after-login">
+              {/* </div> */}
+            </Col>
+            <Col className="header-right">
+              {/* <div className="header-right "> */}
+              <div className="header-signin" onClick={this.ShowLogin}>
+                <p className="Text-sigin">Sign in</p>
+              </div>
+              <div className="header-signup">
+                <p className="Text-signup">Sign up</p>
+              </div>
+              {/* <div className="wrapper-img-after-login">
             <img
               style={{ width: "50px", height: "50px", borderRadius: "50px" }}
               src={require("../assets_user/afterlogin-image.jpg")}
             />
           </div> */}
-          </div>
-        </div>
-        {/* //Signin */}
+              {/* </div> */}
+            </Col>
+            {/* </div> */}
+          </Row>
+          {/* //Signin */}
+        </Container>
         <Modal show={this.state.showlogin} onHide={this.CloseLogin}>
           <Modal.Header closeButton>
             <Modal.Title>Modal heading</Modal.Title>
