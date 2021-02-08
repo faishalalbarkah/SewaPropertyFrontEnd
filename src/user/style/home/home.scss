@@ -4,6 +4,9 @@
   display: flex;
   flex-direction: column;
   min-height: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
   //   background-color: red;
   //   star header
   .header {
@@ -16,35 +19,36 @@
       .header-left-logo {
         flex: 1;
         height: 80px;
-        width: 130px;
-        margin-top: 10px;
-        margin-right: 50px;
-        margin-left: 50px;
       }
     }
     .header-center {
       flex: 1;
+      margin: 10px;
       .header-pembungkus-search {
-        background-color: $color-button-pasif;
-        width: 320px;
-        margin-top: 20px;
-        position: relative;
-        border-radius: 5px;
-        margin-left: 20px;
+        display: flex;
         .header-search {
           height: 40px;
-          width: 270px;
-          border-radius: 5px;
+          width: 325px;
+          padding-left: 10px;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
           border-width: 0;
+          font-size: 13px;
           background-color: $color-button-pasif;
         }
         .header-search:focus {
-          outline: none;
+          outline-style: none;
         }
-        .header-center-logo-search {
-          position: absolute;
-          margin-left: 10px;
-          padding-top: 8px;
+        .wrapper-header-search-logo {
+          background-color: $color-button-pasif;
+          width: 50px;
+          margin: 0px;
+          cursor: pointer;
+          .header-center-logo-search {
+            position: absolute;
+            margin: 10px;
+            // margin-left: 10px;
+          }
         }
       }
     }
@@ -53,10 +57,8 @@
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
-      margin-right: 60px;
+      padding-top: 10px;
       .header-signin {
-        // flex: 1;
-        margin-top: 20px;
         width: 80px;
         height: 40px;
         cursor: pointer;
@@ -71,8 +73,6 @@
       }
       .header-signup {
         // flex: 1;
-        margin-top: 20px;
-        margin-left: 10px;
         width: 80px !important;
         height: 40px;
         background-color: $color-button-pasif;
@@ -99,6 +99,7 @@
     .body-left {
       flex: 1;
       padding-bottom: 20px;
+      // padding-right: 10px;
       .body-left-wrapping {
         display: flex;
         flex-direction: column;
@@ -107,20 +108,18 @@
           font-size: 20px;
           font-weight: bold;
           color: #000000;
-          margin-left: 50px;
         }
         .body-left-DayMonthYear {
           display: flex;
           flex-direction: row;
-          margin-left: 50px;
-          margin-right: 50px;
+          margin-left: 0;
           .btn-type-of-rent {
             flex: 1;
             width: 50px;
             height: 50px;
             background-color: $color-button-pasif;
             border-radius: 5px;
-            margin-left: 10px;
+            margin-right: 10px;
             .text-type-of-rent {
               font-size: 20px;
               font-weight: bold;
@@ -166,43 +165,40 @@
           font-size: 20px;
           font-weight: bold;
           color: #000000;
-          margin-left: 50px;
         }
         .body-left-Data {
           background-color: $color-button-pasif;
-          margin-left: 50px;
-          margin-right: 50px;
+          margin-right: 10px;
           border: 3px solid rgba(196, 196, 196, 0.25);
           box-sizing: border-box;
           height: 50px;
           border-radius: 10px;
+          padding-left: 20px;
+          font-size: 18px;
+          // text-align: center;
         }
         #body-left-PropertyRoom {
           flex: 1;
           font-size: 20px;
           font-weight: bold;
           color: #000000;
-          margin-left: 50px;
         }
         #body-left-Bedroom {
-          margin-top: -10px;
           flex: 1;
           font-size: 15px;
           font-weight: bold;
           color: #929292;
-          margin-left: 50px;
         }
         .body-left-Bedroom-Wrapping {
           display: flex;
           flex-direction: row;
-          margin-left: 40px;
-          margin-right: 50px;
+
           .body-left-Bedroom-Number {
             flex: 1;
             height: 50px;
             background-color: $color-button-pasif;
             border-radius: 5px;
-            margin-left: 10px;
+            margin-right: 10px;
             .body-left-Number {
               font-size: 20px;
               font-weight: bold;
@@ -216,19 +212,16 @@
           font-size: 15px;
           font-weight: bold;
           color: #929292;
-          margin-left: 50px;
         }
         .body-left-Bathroom-Wrapping {
           display: flex;
           flex-direction: row;
-          margin-left: 40px;
-          margin-right: 50px;
           .body-left-Bathroom-Number {
             flex: 1;
             height: 50px;
             background-color: $color-button-pasif;
             border-radius: 5px;
-            margin-left: 10px;
+            margin-right: 10px;
             .body-left-Number {
               font-size: 20px;
               font-weight: bold;
@@ -242,14 +235,12 @@
           font-size: 20px;
           font-weight: bold;
           color: #000000;
-          margin-left: 50px;
         }
         .body-left-furnished {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          margin-left: 50px;
-          margin-right: 50px;
+          margin-right: 10px;
           #body-left-furnished-text {
             font-size: 20px;
             color: #929292;
@@ -260,8 +251,7 @@
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          margin-left: 50px;
-          margin-right: 50px;
+          margin-right: 10px;
           #body-left-PetAllowed-text {
             font-size: 20px;
             color: #929292;
@@ -272,8 +262,7 @@
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          margin-left: 50px;
-          margin-right: 50px;
+          margin-right: 10px;
           #body-left-sharedaccomodation-text {
             font-size: 20px;
             color: #929292;
@@ -285,14 +274,12 @@
           font-size: 20px;
           font-weight: bold;
           color: #000000;
-          margin-left: 50px;
         }
         .TotalBudget {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          margin-left: 50px;
-          margin-right: 50px;
+          margin-right: 10px;
           #LessThan {
             font-size: 20px;
             font-weight: bold;
@@ -310,7 +297,6 @@
           width: 120px;
           height: 50px;
           margin-top: 20px;
-          margin-left: 50px;
           border-radius: 10px;
           border-width: 0px;
           font-size: 15px;
@@ -348,8 +334,7 @@
         flex-wrap: wrap;
         margin: 10px;
         .body-right-content {
-          width: 270px;
-          height: 300px;
+          width: 259px;
           border-width: 10px;
           margin: 10px;
           border: 3px solid rgba(196, 196, 196, 0.25);
@@ -360,18 +345,13 @@
           .body-right-image-content {
             border-radius: 5px;
             margin-top: 8px;
-            margin-left: 7.3px;
-            width: 250px;
+            margin-left: 12px;
+            width: 230px;
             height: 150px;
             position: absolute;
           }
           .body-right-image-content:hover {
-            border-radius: 5px;
-            margin-left: 0;
-            margin-top: 0;
-            width: 263px;
-            height: 150px;
-            position: absolute;
+            transform: scale(1.1);
           }
           .body-right-furnished {
             height: 20px;
