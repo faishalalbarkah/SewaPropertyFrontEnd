@@ -256,8 +256,11 @@
           #InputTotalBudget {
             background-color: $color-button-pasif;
             height: 50px;
-            border-width: 0px;
             border-radius: 5px;
+            padding-left: 27px;
+            font-weight: 700;
+            font-size: 20px;
+            width: 180px;
           }
         }
         .body-left-button {
