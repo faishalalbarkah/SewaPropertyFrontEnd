@@ -1,8 +1,6 @@
 @import "./../config";
 
 .container-home {
-  display: flex;
-  flex-direction: column;
   min-height: auto;
   margin-left: 30px;
   margin-right: 30px;
@@ -10,22 +8,19 @@
   //   background-color: red;
   //   star header
   .header {
-    display: flex;
-    flex-direction: row;
     height: 100px;
     background-color: $primary-color;
     .header-left {
-      flex: 1;
       .header-left-logo {
-        flex: 1;
         height: 80px;
       }
     }
     .header-center {
-      flex: 1;
       margin: 10px;
+      display: flex;
       .header-pembungkus-search {
         display: flex;
+        justify-content: flex-end;
         .header-search {
           height: 40px;
           width: 325px;
@@ -40,10 +35,11 @@
           outline-style: none;
         }
         .wrapper-header-search-logo {
-          background-color: $color-button-pasif;
-          width: 50px;
-          margin: 0px;
-          cursor: pointer;
+          background-color: rgba(196, 196, 196, 0.25);
+          width: 45px;
+          height: 40px;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
           .header-center-logo-search {
             position: absolute;
             margin: 10px;
@@ -53,9 +49,7 @@
       }
     }
     .header-right {
-      flex: 1;
       display: flex;
-      flex-direction: row;
       justify-content: flex-end;
       padding-top: 10px;
       .header-signin {
@@ -72,7 +66,7 @@
         }
       }
       .header-signup {
-        // flex: 1;
+        //
         width: 80px !important;
         height: 40px;
         background-color: $color-button-pasif;
@@ -92,29 +86,20 @@
   //   end header
   //star body
   .body {
-    display: flex;
-    flex-direction: row;
     min-height: 500px;
     //Left
     .body-left {
-      flex: 1;
       padding-bottom: 20px;
       // padding-right: 10px;
       .body-left-wrapping {
-        display: flex;
-        flex-direction: column;
         #body-left-typeofrent {
-          flex: 1;
           font-size: 20px;
           font-weight: bold;
           color: #000000;
         }
         .body-left-DayMonthYear {
-          display: flex;
-          flex-direction: row;
           margin-left: 0;
           .btn-type-of-rent {
-            flex: 1;
             width: 50px;
             height: 50px;
             background-color: $color-button-pasif;
@@ -129,7 +114,6 @@
             }
           }
           .btn-type-of-rent-active {
-            flex: 1;
             width: 50px;
             height: 50px;
             background-color: $color-button-active;
@@ -144,7 +128,6 @@
             }
           }
           .btn-type-of-rent:hover {
-            flex: 1;
             width: 50px;
             height: 50px;
             background-color: $primary-color;
@@ -161,7 +144,6 @@
           }
         }
         #body-left-Date {
-          flex: 1;
           font-size: 20px;
           font-weight: bold;
           color: #000000;
@@ -172,29 +154,25 @@
           border: 3px solid rgba(196, 196, 196, 0.25);
           box-sizing: border-box;
           height: 50px;
+          width: "100%";
           border-radius: 10px;
           padding-left: 20px;
           font-size: 18px;
           // text-align: center;
         }
         #body-left-PropertyRoom {
-          flex: 1;
           font-size: 20px;
           font-weight: bold;
           color: #000000;
         }
         #body-left-Bedroom {
-          flex: 1;
           font-size: 15px;
           font-weight: bold;
           color: #929292;
         }
         .body-left-Bedroom-Wrapping {
-          display: flex;
-          flex-direction: row;
-
+          margin-left: 0;
           .body-left-Bedroom-Number {
-            flex: 1;
             height: 50px;
             background-color: $color-button-pasif;
             border-radius: 5px;
@@ -208,16 +186,13 @@
           }
         }
         #body-left-Bathroom {
-          flex: 1;
           font-size: 15px;
           font-weight: bold;
           color: #929292;
         }
         .body-left-Bathroom-Wrapping {
-          display: flex;
-          flex-direction: row;
+          margin-left: 0;
           .body-left-Bathroom-Number {
-            flex: 1;
             height: 50px;
             background-color: $color-button-pasif;
             border-radius: 5px;
@@ -231,16 +206,14 @@
           }
         }
         #body-left-Aminities {
-          flex: 1;
           font-size: 20px;
           font-weight: bold;
           color: #000000;
         }
         .body-left-furnished {
-          display: flex;
-          flex-direction: row;
           justify-content: space-between;
           margin-right: 10px;
+          display: flex;
           #body-left-furnished-text {
             font-size: 20px;
             color: #929292;
@@ -248,10 +221,9 @@
           }
         }
         .body-left-PetAllowed {
-          display: flex;
-          flex-direction: row;
           justify-content: space-between;
           margin-right: 10px;
+          display: flex;
           #body-left-PetAllowed-text {
             font-size: 20px;
             color: #929292;
@@ -259,10 +231,9 @@
           }
         }
         .body-left-sharedaccomodation {
-          display: flex;
-          flex-direction: row;
           justify-content: space-between;
           margin-right: 10px;
+          display: flex;
           #body-left-sharedaccomodation-text {
             font-size: 20px;
             color: #929292;
@@ -270,27 +241,26 @@
           }
         }
         #body-left-Budget {
-          flex: 1;
           font-size: 20px;
           font-weight: bold;
           color: #000000;
         }
         .TotalBudget {
-          display: flex;
-          flex-direction: row;
           justify-content: space-between;
           margin-right: 10px;
+          display: flex;
           #LessThan {
             font-size: 20px;
             font-weight: bold;
-            flex: 1;
           }
           #InputTotalBudget {
             background-color: $color-button-pasif;
             height: 50px;
-            border-width: 0px;
             border-radius: 5px;
-            flex: 1;
+            padding-left: 27px;
+            font-weight: 700;
+            font-size: 20px;
+            width: 180px;
           }
         }
         .body-left-button {
@@ -322,31 +292,24 @@
     }
     //Right
     .body-right {
-      flex: 2;
-      display: flex;
       justify-content: center;
       border: 1px solid salmon;
       padding-bottom: 20px;
       background-color: $color-button-pasif;
       .body-right-wrapping {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 10px;
         .body-right-content {
           width: 259px;
           border-width: 10px;
-          margin: 10px;
+          margin: 8px;
           border: 3px solid rgba(196, 196, 196, 0.25);
           box-sizing: border-box;
           border-radius: 5px;
-          min-height: 120px;
+          height: 270px;
           cursor: pointer;
           .body-right-image-content {
             border-radius: 5px;
-            margin-top: 8px;
-            margin-left: 12px;
-            width: 230px;
+            margin-top: -8px;
+            width: 229px;
             height: 150px;
             position: absolute;
           }
@@ -370,58 +333,25 @@
             }
           }
           .body-right-description {
-            margin-top: 115px;
-            margin-left: 10px;
-            position: relative;
             .body-right-price-year {
-              display: flex;
-              flex-direction: row;
+              height: 30px;
               .body-right-price {
-                font-size: 15px;
-                font-weight: 700;
-                color: #000000;
-              }
-              .body-right-simbol {
-                font-size: 15px;
-                font-weight: 700;
-                color: #000000;
-              }
-              .body-right-year {
                 font-size: 15px;
                 font-weight: 700;
                 color: #000000;
               }
             }
             .body-right-propertyroom {
-              display: flex;
-              flex-direction: row;
-              margin-top: -20px;
+              // margin-top: -20px;
               #body-right-beds {
-                font-size: 11px;
-                font-weight: 700;
-                color: #000000;
-              }
-              #body-right-bath {
-                font-size: 11px;
-                font-weight: 700;
-                color: #000000;
-              }
-              #body-right-sqft {
                 font-size: 11px;
                 font-weight: 700;
                 color: #000000;
               }
             }
             .body-right-location {
-              display: flex;
-              flex-direction: row;
-              margin-top: -20px;
-              #body-right-kota {
-                font-size: 11px;
-                font-weight: 700;
-                color: #a8a8a8;
-              }
-              #body-right-kecamatan {
+              margin-top: 8px;
+              #body-right-city {
                 font-size: 11px;
                 font-weight: 700;
                 color: #a8a8a8;
