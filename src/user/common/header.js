@@ -121,7 +121,9 @@ class Header extends Component {
                   <Link to="/Profile">
                     <Dropdown.Item href="#/action-1">Profile</Dropdown.Item>
                   </Link>
-                  <Dropdown.Item href="#/action-2">My Booking</Dropdown.Item>
+                  <Link to="/Booking">
+                    <Dropdown.Item href="#/action-2">My Booking</Dropdown.Item>
+                  </Link>
                   <Dropdown.Item href="#/action-3">History</Dropdown.Item>
                   <div
                     style={{
