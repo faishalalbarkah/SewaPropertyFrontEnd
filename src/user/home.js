@@ -29,7 +29,7 @@ class home extends Component {
         <Header />
         <Row className="body">
           <Col md={4} className="body-left">
-            <div className="body-left-wrapping">
+            <Row className="body-left-wrapping">
               <p id="body-left-typeofrent">Type of Rent</p>
               <Row className="body-left-DayMonthYear">
                 <Col className="btn-type-of-rent">
@@ -104,7 +104,7 @@ class home extends Component {
                 <input id="InputTotalBudget" type="number" />
               </div>
               <button className="body-left-button">Apply</button>
-            </div>
+            </Row>
           </Col>
           <Col md={8} className="body-right">
             <Row className="body-right-wrapping">
