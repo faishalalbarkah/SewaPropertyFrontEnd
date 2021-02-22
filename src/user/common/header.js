@@ -17,6 +17,7 @@ class Header extends Component {
     this.state = {
       showlogin: false,
       showregister: false,
+      changepassword: false,
     };
   }
 
@@ -32,6 +33,12 @@ class Header extends Component {
     });
   };
 
+  ShowChangePassword = () => {
+    this.setState({
+      changepassword: true,
+    });
+  };
+
   CloseLogin = () => {
     this.setState({
       showlogin: false,
@@ -41,6 +48,12 @@ class Header extends Component {
   CloseRegister = () => {
     this.setState({
       showregister: false,
+    });
+  };
+
+  CloseChangePassword = () => {
+    this.setState({
+      changepassword: false,
     });
   };
 
@@ -69,10 +82,12 @@ class Header extends Component {
           {/* <div className="header "> */}
           <Col className="header-left">
             {/* <div className="header-left "> */}
-            <img
-              className="header-left-logo"
-              src={require("../assets_user/Logo.PNG")}
-            />
+            <Link to="/">
+              <img
+                className="header-left-logo"
+                src={require("../assets_user/Logo.PNG")}
+              />
+            </Link>
             {/* </div> */}
           </Col>
           <Col className="header-center">
@@ -124,7 +139,12 @@ class Header extends Component {
                   <Link to="/Booking">
                     <Dropdown.Item href="#/action-2">My Booking</Dropdown.Item>
                   </Link>
-                  <Dropdown.Item href="#/action-3">History</Dropdown.Item>
+                  <Dropdown.Item
+                    href="#/action-3"
+                    onClick={this.ShowChangePassword}
+                  >
+                    Change Password
+                  </Dropdown.Item>
                   <div
                     style={{
                       height: "2px",
@@ -255,6 +275,58 @@ class Header extends Component {
                   Don't have an account?{" "}
                   <Link onClick={this.ClickHereLogin}>Klik here</Link>
                 </p>
+              </Form.Group>
+            </Form>
+          </Modal.Body>
+        </Modal>
+
+        {/* Change Password */}
+        <Modal
+          show={this.state.changepassword}
+          onHide={this.CloseChangePassword}
+        >
+          <div style={{ width: "100%", height: "70px" }}>
+            <p
+              style={{
+                textAlign: "center",
+                marginTop: "15px",
+                color: "#000000",
+                fontWeight: "700",
+                fontSize: "30px",
+              }}
+            >
+              Change Password
+            </p>
+          </div>
+          <Modal.Body>
+            <Form>
+              <Form.Group controlId="formBasicEmail">
+                <Form.Label>Old Password</Form.Label>
+                <Form.Control type="password" placeholder="Old Password" />
+              </Form.Group>
+
+              <Form.Group controlId="formBasicPassword">
+                <Form.Label>New Password</Form.Label>
+                <Form.Control type="password" placeholder="New Password" />
+              </Form.Group>
+
+              <Form.Group controlId="formBasicPassword">
+                <Form.Label>Confirmation Password</Form.Label>
+                <Form.Control
+                  type="password"
+                  placeholder="Confirmation Password"
+                />
+              </Form.Group>
+              <Form.Group>
+                <Button
+                  style={{
+                    width: "100%",
+                    marginTop: "15px",
+                    backgroundColor: "#5A57AB",
+                  }}
+                >
+                  Save Changes
+                </Button>
               </Form.Group>
             </Form>
           </Modal.Body>

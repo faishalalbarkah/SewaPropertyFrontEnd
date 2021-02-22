@@ -3,6 +3,7 @@ import "./style/home/home.scss";
 import { Modal, Button } from "react-bootstrap";
 import Header from "./common/header";
 import { Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 class home extends Component {
   constructor(props) {
@@ -108,6 +109,42 @@ class home extends Component {
           </Col>
           <Col md={8} className="body-right">
             <Row className="body-right-wrapping">
+              {/* <Link to="/detailproduk"> */}
+                <div className="body-right-content">
+                  <div style={{ height: "150px" }}>
+                    <img
+                      className="body-right-image-content"
+                      src={require("./assets_user/property.jpg")}
+                    />
+                    <div className="body-right-furnished">
+                      <p className="body-right-furnished-text">Furnished</p>
+                    </div>
+                  </div>
+                  <Col className="body-right-description">
+                    <Row className="body-right-price-year">
+                      <Col className="body-right-price">
+                        Rp.9.000.000 / Year
+                      </Col>
+                      {/* <Col xs={2} className="body-right-simbol"></Col>
+                    <Col xs={4} className="body-right-year"></Col> */}
+                    </Row>
+                    <Row className="body-right-propertyroom">
+                      <Col id="body-right-beds">
+                        3 Beds / 2 Baths / 1,800 sqft
+                      </Col>
+
+                      {/* <Col id="body-right-bath">2 Baths,</Col>
+
+                    <Col id="body-right-sqft">1,800 sqft</Col> */}
+                    </Row>
+                    <Row className="body-right-location">
+                      <Col id="body-right-city">
+                        Tangerang Selatan / Pondok Aren
+                      </Col>
+                    </Row>
+                  </Col>
+                </div>
+              {/* </Link> */}
               <div className="body-right-content">
                 <div style={{ height: "150px" }}>
                   <img
@@ -206,40 +243,7 @@ class home extends Component {
                   </Row>
                 </Col>
               </div>
-
-               <div className="body-right-content">
-                <div style={{ height: "150px" }}>
-                  <img
-                    className="body-right-image-content"
-                    src={require("./assets_user/property.jpg")}
-                  />
-                  <div className="body-right-furnished">
-                    <p className="body-right-furnished-text">Furnished</p>
-                  </div>
-                </div>
-                <Col className="body-right-description">
-                  <Row className="body-right-price-year">
-                    <Col className="body-right-price">Rp.9.000.000 / Year</Col>
-                    {/* <Col xs={2} className="body-right-simbol"></Col>
-                    <Col xs={4} className="body-right-year"></Col> */}
-                  </Row>
-                  <Row className="body-right-propertyroom">
-                    <Col id="body-right-beds">
-                      3 Beds / 2 Baths / 1,800 sqft
-                    </Col>
-
-                    {/* <Col id="body-right-bath">2 Baths,</Col>
-
-                    <Col id="body-right-sqft">1,800 sqft</Col> */}
-                  </Row>
-                  <Row className="body-right-location">
-                    <Col id="body-right-city">
-                      Tangerang Selatan / Pondok Aren
-                    </Col>
-                  </Row>
-                </Col>
-              </div>
-               <div className="body-right-content">
+              <div className="body-right-content">
                 <div style={{ height: "150px" }}>
                   <img
                     className="body-right-image-content"
