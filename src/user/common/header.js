@@ -116,7 +116,7 @@ class Header extends Component {
               <p className="Text-signup">Sign up</p>
             </div> */}
             <div className="wrapper-img-after-login">
-              <Dropdown>
+              {/* <Dropdown>
                 <Dropdown.Toggle
                   variant="success"
                   className="btn-success"
@@ -145,6 +145,39 @@ class Header extends Component {
                   >
                     Change Password
                   </Dropdown.Item>
+                  <div
+                    style={{
+                      height: "2px",
+                      width: "100%",
+                      backgroundColor: "#C3C4CB",
+                    }}
+                  />
+                  <Dropdown.Item href="#/action-3">Logout</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown> */}
+              <Dropdown>
+                <Dropdown.Toggle
+                  variant="success"
+                  className="btn-success"
+                  id="dropdown-basic"
+                >
+                  <img
+                    style={{
+                      width: "50px",
+                      height: "50px",
+                      borderRadius: "50px",
+                    }}
+                    src={require("../assets_user/afterlogin-image.jpg")}
+                  />
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Link to="/CreateProperty">
+                    <Dropdown.Item href="#/action-1">
+                      Add Property
+                    </Dropdown.Item>
+                  </Link>
+
                   <div
                     style={{
                       height: "2px",
